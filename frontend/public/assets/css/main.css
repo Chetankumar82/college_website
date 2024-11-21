@@ -11882,48 +11882,8 @@ marquee {
   background-color: var(--tg-theme-primary);
   margin-bottom: -8px;
 }
-.main-text
-{
-    position: absolute;
-    top: 50px;
-    width: 96.66666666666666%;
-    color: #FFF;
-}
-.btn-min-block
-{
-    min-width: 170px;
-    line-height: 26px;
-}
-.btn-clear
-{
-    color: #FFF;
-    background-color: transparent;
-    border-color: #FFF;
-    margin-right: 15px;
-}
-.btn-clear:hover
-{
-    color: #000;
-    background-color: #FFF;
-}
-.item img{
-  width: 100%;
-}
-.carousel-inner .item {
-  transition: transform 1s ease-in-out;
-}
-.slider-content{
-  text-align: left;
-    transform: translate(180px, -380px);
-
-}
-.slider-content h1{
-  color: white;
-  font-size: 70px;
-}
-.slider-content p{
-  color: white;
-    font-size: 23px;
-    padding-right: 600px;
-    
+@media(max-width:768px) {
+  .header-right-btn a{
+    display: none;
+  }
 }
