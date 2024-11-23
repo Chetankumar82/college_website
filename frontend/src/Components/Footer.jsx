@@ -1,98 +1,115 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
-    <footer className="footer-section pt-120" data-background="assets/img/bg-img/footer-bg.png">
-            <div className="footer-top-wrap">
-                <div className="container">
-                    <div className="footer-top text-center">
-                        <h2 className="title">Subscribe Our Newsletter For <br/>Latest Updates</h2>
-                        <div className="footer-form-wrap">
-                            <form action="https://html.rrdevs.net/edcare/mail.php" className="footer-form">
-                                <div className="form-item">
-                                    <input type="text" id="email-2" name="email" className="form-control" placeholder="Enter Your E-mail"/>
-                                    <div className="icon"><i className="fa-light fa-envelope"></i></div>
-                                </div>
-                                <button className="ed-primary-btn">Subscribe Now</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div className="row footer-wrap">
-                        <div className="col-lg-3 col-md-6">
-                            <div className="footer-widget">
-                                <h3 className="widget-header">Get in touch!</h3>
-                                <p className="mb-30">Fusce varius, dolor tempor interdum tristiquei bibendum.</p>
-                                <div className="footer-contact">
-                                    <span className="number"><i className="fa-regular fa-phone"></i><a href="tel:702123-1478">(702) 123-1478</a></span>
-                                    <a href="mailto:info@company.com" className="mail">info@company.com</a>
-                                </div>
-                                <ul className="footer-social">
-                                    <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i className="fab fa-behance"></i></a></li>
-                                    <li><a href="#"><i className="fab fa-pinterest"></i></a></li>
-                                    <li><a href="#"><i className="fab fa-youtube"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <div className="footer-widget widget-2">
-                                <h3 className="widget-header">Company Info</h3>
-                                <ul className="footer-list">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="service.html">Resource Center</a></li>
-                                    <li><a href="team.html">Careers</a></li>
-                                    <li><a href="contact.html">Instructor</a></li>
-                                    <li><a href="contact.html">Become A Teacher</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <div className="footer-widget widget-2">
-                                <h3 className="widget-header">Useful Links</h3>
-                                <ul className="footer-list">
-                                    <li><a href="contact.html">All Courses</a></li>
-                                    <li><a href="contact.html">Digital Marketing</a></li>
-                                    <li><a href="contact.html">Design & Branding</a></li>
-                                    <li><a href="contact.html">Storytelling & Voice Over</a></li>
-                                    <li><a href="contact.html">News & Blogs</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <div className="footer-widget">
-                                <h3 className="widget-header">Recent Post</h3>
-                                <div className="sidebar-post mb-20">
-                                    <img src="assets/img/images/footer-post-1.png" alt="post"/>
-                                    <div className="post-content">
-                                        <h3 className="title"><a href="#">Where Dreams Find a Home</a></h3>
-                                        <ul className="post-meta">
-                                            <li><i className="fa-light fa-calendar"></i>20 April, 2024</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="sidebar-post">
-                                    <img src="assets/img/images/footer-post-2.png" alt="post"/>
-                                    <div className="post-content">
-                                        <h3 className="title"><a href="#">Where Dreams Find a Home</a></h3>
-                                        <ul className="post-meta">
-                                            <li><i className="fa-light fa-calendar"></i>20 April, 2024</li>
-                                        </ul>
-                                    </div>
-                                </div>
+    <>
+    <footer className="rts-footer v_1 pt--100 pb--80">
+    <div className="container">
+        <div className="row justify-content-md-center">
+            <div className="col-lg-12 col-md-11">
+                
+                <div className="row gy-5 gy-lg-0">
+                    <div className="col-md-6 col-sm-6 col-lg-4">
+                        <div className="rts-footer-widget w-320">
+                            <a href="index.html" className="d-block rts-footer-logo mb--40">
+                                <img src="assets/images/logo/footer-logo.svg" alt="studyhub"/>
+                            </a>
+                            <p>
+                                We are passionate education dedicated to providing high-quality
+                                resources learners all backgrounds.
+                            </p>
+                            <div className="rts-contact-link">
+                                <a href="mailto:contact@reacthemes.com"><i className="fa-sharp fa-light fa-location-dot"></i> Park, Melbourne, Australia </a>
+                                <a href="callto:121"><i className="fa-thin fa-phone"></i> 485-826-710</a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div className="copyright-area">
-                <div className="container">
-                    <div className="copyright-content">
-                        <p>Copyright © 2024 EdCare. All Rights Reserved.</p>
+                    <div className="col-md-6 col-sm-6 col-lg-2">
+                        <div className="rts-footer-widget ">
+                            <h6 className="rt-semi">Our Campus</h6>
+                            <div className="rts-footer-menu">
+                                <ul>
+                                    <li><a href="academic.html">Academic</a></li>
+                                    <li><a href="program-single.html">Planning & Admission</a></li>
+                                    <li><a href="campus-life.html">Campus Safety</a></li>
+                                    <li><a href="faculty.html">Faculty</a></li>
+                                    <li><a href="faculty-details.html">Human Resources</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-6 col-sm-4 col-lg-2">
+                        <div className="rts-footer-widget ml--30">
+                            <h6 className="rt-semi">Our Campus</h6>
+                            <div className="rts-footer-menu">
+                                <ul>
+                                    <li><a href="about.html">About Us </a></li>
+                                    <li><a href="admission.html">Admission</a></li>
+                                    <li><a href="scholarship.html">Scholarship</a></li>
+                                    <li><a href="tution-fee.html">Tution Fee</a></li>
+                                    <li><a href="athletics.html">Athletics</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-6 col-sm-8 col-lg-4">
+                        <div className="rts-footer-widget ml--30">
+                            <h6 className="rt-semi">Recent Post</h6>
+                            <div className="rts-post-widget">
+                                <ul className="list-unstyled">
+                                    <li className="single-post">
+                                        <a href="blog-details.html" className="blog-thumb">
+                                            <img src="assets/images/blog/w-1.jpg" alt="latest post"/>
+                                        </a>
+                                        <div className="post-content">
+                                            <span className="rt-date">October 29, 2023</span>
+                                            <a href="blog-details.html">
+                                                Avoid These 4 Common When Managing Remote Teams
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li className="single-post">
+                                        <a href="blog-details.html" className="blog-thumb">
+                                            <img src="assets/images/blog/small-thumb-1.jpg" alt="latest post"/>
+                                        </a>
+                                        <div className="post-content">
+                                            <span className="rt-date">October 29, 2023</span>
+                                            <a href="blog-details.html">
+                                                Avoid These 4 Common When Managing Remote Teams
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </div>
+</footer>
+<div className="rts-footer-copy-right v_1">
+    <div className="container">
+        <div className="row">
+            <div className="rt-center">
+                <p className="--p-xs">Copyright &copy; 2024 All Rights Reserved by <Link to="#">Studyhub</Link></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div className="progress-wrap">
+    <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style={{transition: "stroke-dashoffset 10ms linear 0s",
+    strokeDasharray: "307.919",
+    strokeDashoffset: "307.919"}}></path>
+    </svg>
+</div>
+
+
+<div id="anywhere-home" className="">
+</div>
+</>
   )
 }
 
