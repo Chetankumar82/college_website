@@ -165,30 +165,31 @@ const Header = () => {
     
     <div className="inner-main-wrapper-desk">
         <div className="thumbnail">
-            <img src="assets/images/logo/logo-default.svg" alt="studyhub-university"/>
+            <img src="assets/images/logo/cit-logo.png" alt="studyhub-university"/>
         </div>
         <div className="inner-content">
             <p className="disc">
-                A modern HTML template for education, offering intuitive design & essential features for seamless learning experiences.
+            To achieve excellence in technical and management education through quality teaching and innovation.
             </p>
             
             <div className="offcanvase__banner mt--50">
                 <div className="offcanvase__banner--content">
-                    <img src="assets/images/offcanvase.jpg" alt="offcanvase"/>
+                <img src="assets/images/sidebar-img.webp" alt="" />
                     <Link to="admission.html" className="rts-theme-btn">Apply Now</Link>
                 </div>
             </div>
             <div className="offcanvase__info">
                 <div className="offcanvase__info--content">
-                    <Link to="callto:+61485826710"><span><i className="fa-sharp fa-light fa-phone"></i></span>+(61) 485-826-710</Link>
-                    <Link to="#"><span><i className="fa-sharp fa-light fa-location-dot"></i></span>Yarra Park, Melbourne, Australia</Link>
+                    <Link to="tel:+91 98298 04013"><span><i className="fa-sharp fa-light fa-phone"></i></span>+91 98298 04013</Link>
+                    <Link to="#"><span><i className="fa-sharp fa-light fa-location-dot"></i></span>Village Danvav, Mt. Road, Abu Road Dist. Sirohi, Rajasthan - 307510.</Link>
                     <div className="offcanvase__info--content--social">
-                        <p className="title">Follow Us:</p>
+                        
                         <div className="social__links">
-                            <Link to="#"><i className="fa-brands fa-facebook"></i></Link>
-                            <Link to="#"><i className="fa-brands fa-instagram"></i></Link>
-                            <Link to="#"><i className="fa-brands fa-linkedin"></i></Link>
-                            <Link to="#"><i className="fa-brands fa-youtube"></i></Link>
+                        <Link to="https://www.instagram.com/info_cit/"><img src="assets/images/social-icons/instagram.png" alt="" /></Link>
+                                <Link to="https://www.facebook.com/citabuinfo/"><img src="assets/images/social-icons/facebook.png" alt="" /></Link>
+                                <Link to="https://in.linkedin.com/school/chartered-institute-of-technology/"><img src="assets/images/social-icons/linkedin.png" alt="" /></Link>
+                                <Link to="https://twitter.com/citabuinfo"><img src="assets/images/social-icons/twitter.png" alt="" /></Link>
+                                <Link to="https://www.youtube.com/@citaburoad8124"><img src="assets/images/social-icons/youtube.png" alt="" /></Link>
                         </div>
                     </div>
                 </div>

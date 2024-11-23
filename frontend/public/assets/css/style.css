@@ -23741,6 +23741,8 @@ edit .quantity-edit button {
   display: flex;
   align-items: center;
   gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
 }
 .offcanvase__info--content--social > p {
   text-align: left;
@@ -23771,4 +23773,9 @@ marquee {
 }
 .right-information a img{
   width: 28px;
+}
+
+.social__links a img{
+  width: 35px!important;
+    height: 35px!important;
 }
