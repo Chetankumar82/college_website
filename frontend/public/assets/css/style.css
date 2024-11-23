@@ -15,7 +15,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&amp;display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
 :root {
-  --rt-theme: #09A24F;
+  --rt-theme: #337ab7;
   --rt-primary: #337ab7;
   --rt-primary-1: #553CDF;
   --rt-secondary: #110C2D;
@@ -14931,6 +14931,9 @@ xclip
   .header-top-one-wrapper .left-information {
     display: none;
   }
+  .header-top-one-wrapper .right-information {
+    display: none;
+  }
 }
 .header-top-one-wrapper .left-information a {
   color: var(--rt-white);
@@ -14944,14 +14947,15 @@ xclip
 .header-top-one-wrapper .right-information {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 @media screen and (max-width: 576px) {
   .header-top-one-wrapper .right-information {
-    width: 100%;
-    justify-content: center;
-    gap: 20px;
+   display: none;
   }
+  .header-top-one-wrapper {
+    padding: 0px 0;
+}
 }
 .header-top-one-wrapper .right-information .rts-dropdown-menu {
   padding: 0;
@@ -15125,11 +15129,12 @@ xclip
 }
 .header-right-area-one .header-right-content .search-form {
   max-width: 220px;
-  height: 40px;
-  border: 1px solid var(--rt-border);
-  position: relative;
-  display: flex;
-  align-items: center;
+    height: 40px;
+    border: 1px solid #cee30c;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 @media screen and (max-width: 576px) {
   .header-right-area-one .header-right-content .search-form {
@@ -16435,7 +16440,7 @@ nav ul li a {
   -webkit-transition: opacity 3500ms ease-in, -webkit-transform 10000ms ease;
 }
 .rts-hero-slider-active .swiper-slide .rts-slider-content .rts-university-icon {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .rts-hero-slider-active .swiper-slide .rts-slider-content .rts-university-estd {
   position: relative;
@@ -16475,6 +16480,7 @@ nav ul li a {
 .rts-hero-slider-active .swiper-slide .rts-slider-content .rts-slider-title span {
   font-weight: 400;
   color: var(--rt-theme);
+  margin-right: 8px;
 }
 @media screen and (max-width: 1200px) {
   .rts-hero-slider-active .swiper-slide .rts-slider-content .rts-slider-title {
@@ -23745,3 +23751,24 @@ edit .quantity-edit button {
   gap: 10px;
 }
 /*# sourceMappingURL=../maps/style.css.map */
+
+
+marquee {
+  height: 39px;
+  
+
+  background-color: var(--tg-theme-primary);
+  margin-bottom: -8px;
+}
+.marquee-info {
+  
+  background-color: #203154;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.right-information a img{
+  width: 28px;
+}

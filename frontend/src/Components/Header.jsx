@@ -10,14 +10,16 @@ const Header = () => {
                     <div className="col-lg-12">
                         <div className="header-top-one">
                             <div className="left-information">
-                                <Link to="mailto:someone@example.com" className="email"><i className="fa-light fa-envelope"></i>info@studyhub.com</Link>
-                                <Link to="tel:+4733378901" className="email"><i className="fa-light fa-phone"></i>+61 012 012 445</Link>
+                                <Link to="mailto:citaburoad@gmail.com" className="email"><i style={{color: "yellow"}} className="fa-light fa-envelope"></i>citaburoad@gmail.com</Link>
+                                <Link to="tel:+91 98298 04013" className="email"><i style={{color: "yellow"}} className="fa-light fa-phone"></i>Call Now: +91 98298 04013</Link>
                             </div>
                            
                             <div className="right-information">
-                                
-                                
-                                
+                              <Link to="https://www.instagram.com/info_cit/"><img src="assets/images/social-icons/instagram.png" alt="" /></Link>
+                                <Link to="https://www.facebook.com/citabuinfo/"><img src="assets/images/social-icons/facebook.png" alt="" /></Link>
+                                <Link to="https://in.linkedin.com/school/chartered-institute-of-technology/"><img src="assets/images/social-icons/linkedin.png" alt="" /></Link>
+                                <Link to="https://twitter.com/citabuinfo"><img src="assets/images/social-icons/twitter.png" alt="" /></Link>
+                                <Link to="https://www.youtube.com/@citaburoad8124"><img src="assets/images/social-icons/youtube.png" alt="" /></Link>
                             </div>
                         </div>
                     </div>
@@ -29,65 +31,106 @@ const Header = () => {
                 <div className="col-lg-12">
                     <div className="header-one-wrapper">
                         <div className="left-side-header">
-                            <Link to="index.html" className="logo-area">
-                                <img src="assets/images/logo/" alt="logo"/>
+                            <Link to="/" className="logo-area">
+                                <img src="assets/images/logo/cit-logo.png" alt="logo" style={{width: "250px"}}/>
                             </Link>
                         </div>
 
                         <div className="main-nav-one">
                             <nav>
                                 <ul>
-                                    <li className="has-dropdown">
-                                        <Link className="nav-link" to="#">Home</Link>
-                                        <ul className="submenu">
-                                            <li><Link to="index.html">Home One</Link></li>
-                                            <li><Link to="index-two.html">Home Two</Link></li>
-                                        </ul>
+                                    <li>
+                                        <Link className="nav-link" to="/">Home</Link>
+                                       
                                     </li>
                                     <li className="has-dropdown">
-                                        <Link className="nav-link" to="#">Pages</Link>
+                                        <Link className="nav-link" to="/about">About Us</Link>
                                         <ul className="submenu">
-                                            <li><Link to="about.html">About Us</Link></li>
-                                            <li><Link to="athletics.html">Athletics</Link></li>
+                                            
                                             <li className="sub-dropdown">
-                                                <Link to="javascript:void(0);">Faculty</Link>
+                                                <Link to="javascript:void(0);">Introduction</Link>
                                                 <ul className="submenu third-lvl base">
-                                                    <li><Link className="mobile-menu-link" href="faculty.html">Faculty Staff</Link></li>
-                                                    <li><Link className="mobile-menu-link" href="faculty-details.html">Faculty details</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="/">The Institute Infrastructure</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Affiliations and Accreditations</Link></li>
                                                 </ul>
                                             </li>
-                                            <li><Link to="research.html">Research</Link></li>
+                                            <li><Link to="/contact">Hostel & Mess</Link></li>
+                                           
+                                            
+                                        </ul>
+                                    </li>
+                                    
+                                    <li className="has-dropdown">
+                                        <Link className="nav-link" to="/about">Academics</Link>
+                                        <ul className="submenu">
+                                        <li className="sub-dropdown">
+                                                <Link to="javascript:void(0);">Academic Profile</Link>
+                                                <ul className="submenu third-lvl base">
+                                                    <li><Link className="mobile-menu-link" to="faculty.html">Principle Profile</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Faculty Profile</Link></li>
+                                                </ul>
+                                        </li>
+                                        <li className="sub-dropdown">
+                                                <Link to="javascript:void(0);">Departments</Link>
+                                                <ul className="submenu third-lvl base">
+                                                    <li><Link className="mobile-menu-link" to="faculty.html">Computer Science</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Electrical</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Mechanical</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Civil</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Electronices & Communication</Link></li>
+                                                </ul>
+                                        </li>
+                                        <li className="sub-dropdown">
+                                                <Link to="javascript:void(0);">Self Learning Programs</Link>
+                                                <ul className="submenu third-lvl base">
+                                                    <li><Link className="mobile-menu-link" to="faculty.html">NPTEL</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Swayam</Link></li>
+                                                </ul>
+                                        </li>
+                                        <li className="sub-dropdown">
+                                                <Link to="javascript:void(0);">Research</Link>
+                                                <ul className="submenu third-lvl base">
+                                                    <li><Link className="mobile-menu-link" to="faculty.html">R&D Lab</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Workshops & Seminar</Link></li>
+                                                    
+                                                </ul>
+                                        </li>
+                                        <li className="sub-dropdown">
+                                                <Link to="javascript:void(0);">Students Clubs</Link>
+                                                <ul className="submenu third-lvl base">
+                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Coding Club</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Robotics Club</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Social Media Club</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Technical Innovation Club</Link></li>
+                                                </ul>
+                                            </li>
+                                            <li><Link to="about.html">Gallery</Link></li>
                                         </ul>
                                     </li>
                                     <li className="has-dropdown">
-                                        <Link className="nav-link" href="#">Academics</Link>
+                                        <Link className="nav-link" to="/about">Student Corner</Link>
                                         <ul className="submenu">
-                                            <li><Link to="academic.html">Academics</Link></li>
-                                            <li><Link to="admission.html">Admission</Link></li>
-                                            <li><Link to="academic-area.html">Academics Area</Link></li>
-                                            <li><Link to="campus-life.html">Campus Life</Link></li>
-                                            <li><Link to="scholarship.html">Scholarship</Link></li>
-                                            <li><Link to="tution-fee.html">Tution Fee</Link></li>
-                                            <li><Link to="program-single.html">Program Single</Link></li>
+                                            
+                                            <li className="sub-dropdown">
+                                                <Link to="javascript:void(0);">Academic Data</Link>
+                                                <ul className="submenu third-lvl base">
+                                                    <li><Link className="mobile-menu-link" to="https://btu.ac.in/home/SYLLABUS-FOR-UNDERGRADUATE-PROGRAMME2021-22146">Scheme</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="https://btu.ac.in/home/SYLLABUS-FOR-UNDERGRADUATE-PROGRAMME2021-22146">Syllabus</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="https://btu.ac.in/home/Notices--Orders79">Examinations</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Academic Calender</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="https://btu.ac.in/home/Notices--Orders79">University Orders & Notices</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="">Students Achievement</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="">Grievance Redressal</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="">Students Achievement</Link></li>
+                                                </ul>
+                                            </li>
+                                            <li><Link to="/contact">University Certificates</Link></li>
+                                           
+                                            
                                         </ul>
                                     </li>
-                                    <li className="has-dropdown">
-                                        <Link className="nav-link" href="#">Event</Link>
-                                        <ul className="submenu">
-                                            <li><Link to="event.html">Event</Link></li>
-                                            <li><Link to="event-details.html">Event Details</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li className="has-dropdown">
-                                        <Link className="nav-link" href="#">Blog</Link>
-                                        <ul className="submenu">
-                                            <li><Link to="blog.html">Blog</Link></li>
-                                            <li><Link to="blog-grid.html">Blog Grid</Link></li>
-                                            <li><Link to="blog-list.html">Blog List</Link></li>
-                                            <li><Link to="blog-details.html">Blog Details</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li><Link className="nav-link" href="contact.html">Contact</Link></li>
+                                    <li><Link className="nav-link" to="">Placement</Link></li>
+                                    <li><Link className="nav-link" to="contact.html">Contact Us</Link></li>
                                 </ul>
                             </nav>
                         </div>
@@ -95,10 +138,7 @@ const Header = () => {
                         <div className="header-right-area-one">
                             <div className="header-right-content">
                                 <div className="search-form">
-                                    <form action="#">
-                                        <input type="text" name="s" id="search-site" placeholder="Search..."/>
-                                        <button type="submit"><i className="fa-light fa-magnifying-glass"></i></button>
-                                    </form>
+                                    <Link to ="/">Addmission Now</Link>
                                 </div>
                                 <div className="menu-bar" id="menu-btn">
                                     <img src="assets/images/icon/bar.svg" alt="menu-bar"/>
@@ -110,6 +150,12 @@ const Header = () => {
             </div>
         </div>
     </header>
+    <div className="marquee-info">
+                            <marquee width="100%" direction="left" class="h-marquee">
+                                <p style={{fontSize: "16px", fontWeight: 600, color: "#fff", zIndex: 1000,}}>Welcome to Chartered Institute of Technology, Aburoad | We Provide | Best Education | Only Engineering College in Sirohi District <img src="assets/images/admission.gif" alt="" style={{width: "100px", height: "40px"}} />   </p>
+
+                            </marquee> 
+                            </div> 
     
 
 
@@ -159,51 +205,51 @@ const Header = () => {
                 <li className="has-droupdown">
                     <Link to="#" className="main">Homepages</Link>
                     <ul className="submenu mm-collapse">
-                        <li><Link className="mobile-menu-link" href="index.html">Home Style One</Link></li>
-                        <li><Link className="mobile-menu-link" href="index-two.html">Home Style Two</Link></li>
+                        <li><Link className="mobile-menu-link" to="index.html">Home Style One</Link></li>
+                        <li><Link className="mobile-menu-link" to="index-two.html">Home Style Two</Link></li>
                     </ul>
                 </li>
                 <li className="has-droupdown">
                     <Link to="#" className="main">Events</Link>
                     <ul className="submenu mm-collapse">
-                        <li><Link className="mobile-menu-link" href="event.html">Event</Link></li>
-                        <li><Link className="mobile-menu-link" href="event-details.html">Event Details</Link></li>
+                        <li><Link className="mobile-menu-link" to="event.html">Event</Link></li>
+                        <li><Link className="mobile-menu-link" to="event-details.html">Event Details</Link></li>
                     </ul>
                 </li>
                 <li className="has-droupdown">
                     <Link to="#" className="main">Academics</Link>
                     <ul className="submenu mm-collapse">
-                        <li><Link className="mobile-menu-link" href="academic.html">Academic</Link></li>
-                        <li><Link className="mobile-menu-link" href="admission.html">Admission</Link></li>
-                        <li><Link className="mobile-menu-link" href="academic-area.html">Academic Area</Link></li>
-                        <li><Link className="mobile-menu-link" href="campus-life.html">Campus Life</Link></li>
-                        <li><Link className="mobile-menu-link" href="scholarship.html">Scholarship</Link></li>
-                        <li><Link className="mobile-menu-link" href="tution-fee.html">Tution Fee</Link></li>
-                        <li><Link className="mobile-menu-link" href="program-single.html">Program Single</Link></li>
+                        <li><Link className="mobile-menu-link" to="academic.html">Academic</Link></li>
+                        <li><Link className="mobile-menu-link" to="admission.html">Admission</Link></li>
+                        <li><Link className="mobile-menu-link" to="academic-area.html">Academic Area</Link></li>
+                        <li><Link className="mobile-menu-link" to="campus-life.html">Campus Life</Link></li>
+                        <li><Link className="mobile-menu-link" to="scholarship.html">Scholarship</Link></li>
+                        <li><Link className="mobile-menu-link" to="tution-fee.html">Tution Fee</Link></li>
+                        <li><Link className="mobile-menu-link" to="program-single.html">Program Single</Link></li>
                     </ul>
                 </li>
                 <li className="has-droupdown">
                     <Link to="#" className="main">Pages</Link>
                     <ul className="submenu mm-collapse">
-                        <li><Link className="mobile-menu-link" href="about.html">About Us</Link></li>
-                        <li><Link className="mobile-menu-link" href="athletics.html">Athletics</Link></li>
+                        <li><Link className="mobile-menu-link" to="about.html">About Us</Link></li>
+                        <li><Link className="mobile-menu-link" to="athletics.html">Athletics</Link></li>
                         <li className="has-dropdown third-lvl">
                             <Link to="javascript:void(0);">Faculty</Link>
                             <ul className="submenu third-lvl base">
-                                <li><Link className="mobile-menu-link" href="faculty.html">Faculty</Link></li>
-                                <li><Link className="mobile-menu-link" href="faculty-details.html">Faculty details</Link></li>
+                                <li><Link className="mobile-menu-link" to="faculty.html">Faculty</Link></li>
+                                <li><Link className="mobile-menu-link" to="faculty-details.html">Faculty details</Link></li>
                             </ul>
                         </li>
-                        <li><Link className="mobile-menu-link" href="research.html">Research</Link></li>
+                        <li><Link className="mobile-menu-link" to="research.html">Research</Link></li>
                     </ul>
                 </li>
                 <li className="has-droupdown">
                     <Link to="#" className="main">Blog</Link>
                     <ul className="submenu mm-collapse">
-                        <li><Link className="mobile-menu-link" href="blog.html">Blog</Link></li>
-                        <li><Link className="mobile-menu-link" href="blog-grid.html">Blog Grid</Link></li>
-                        <li><Link className="mobile-menu-link" href="blog-list.html">Blog List</Link></li>
-                        <li><Link className="mobile-menu-link" href="blog-details.html">Blog Details</Link></li>
+                        <li><Link className="mobile-menu-link" to="blog.html">Blog</Link></li>
+                        <li><Link className="mobile-menu-link" to="blog-grid.html">Blog Grid</Link></li>
+                        <li><Link className="mobile-menu-link" to="blog-list.html">Blog List</Link></li>
+                        <li><Link className="mobile-menu-link" to="blog-details.html">Blog Details</Link></li>
                     </ul>
                 </li>
                 <li>
@@ -239,6 +285,7 @@ const Header = () => {
     </div>
  
 </div>
+
     </>
   )
 }

@@ -35,15 +35,14 @@ const Slider = () => {
                                                 <img src="assets/images/banner/v-logo-1.png" alt="university-logo"/>
                                             </div>
                                             <div className="rts-university-estd">
-                                                <span>Est - 1971</span>
+                                                <span>Est - 2008</span>
                                             </div>
                                             <h1 className="rts-slider-title">
-                                                Become a <span>Studyhub</span>
-                                                University Students
+                                                Welcome to <span>Chartered</span>
+                                                 Institute of Technology
                                             </h1>
                                             <p className="rts-slider-desc w-560">
-                                                Remember to tailor the section names to fit the specific needs and
-                                                structure of your university website.
+                                            An initiative by Gyan Raman Charitable Trust
                                             </p>
                                             <div className="rts-slider-btn mt--50">
                                                 <a href="academic.html" className="rts-theme-btn btn-arrow">View Our Program <span><i className="fa-thin fa-arrow-right"></i></span></a>
@@ -68,14 +67,14 @@ const Slider = () => {
                                                 <img src="assets/images/banner/v-logo-1.png" alt="university-logo"/>
                                             </div>
                                             <div className="rts-university-estd">
-                                                <span>Est - 1971</span>
+                                                <span>Est - 2008</span>
                                             </div>
                                             <h1 className="rts-slider-title">
-                                                Become a <span>Knowledge</span> Elite Scholar
+                                            Best BTU <span> Affiliated</span>
+                                            Colleges in Rajasthan
                                             </h1>
                                             <p className="rts-slider-desc w-560">
-                                                Remember to tailor the section names to fit the specific needs and
-                                                structure of your university website.
+                                            Excellence in technical and management education.
                                             </p>
                                             <div className="rts-slider-btn mt--50">
                                                 <a href="academic.html" className="rts-theme-btn btn-arrow">View Our Program <span><i className="fa-thin fa-arrow-right"></i></span></a>
@@ -100,14 +99,14 @@ const Slider = () => {
                                                 <img src="assets/images/banner/v-logo-1.png" alt="university-logo"/>
                                             </div>
                                             <div className="rts-university-estd">
-                                                <span>Est - 1971</span>
+                                                <span>Est - 2008</span>
                                             </div>
                                             <h1 className="rts-slider-title">
-                                                Achieve <span>Research</span> Excellence Scholarship
+                                                CIT Providing<span> excellent </span>
+                                                 learning environment
                                             </h1>
                                             <p className="rts-slider-desc w-560">
-                                                Remember to tailor the section names to fit the specific needs and
-                                                structure of your university website.
+                                            A globally recognized institute of excellence in the field of education.
                                             </p>
                                             <div className="rts-slider-btn mt--50">
                                                 <a href="academic.html" className="rts-theme-btn btn-arrow">View Our Program <span><i className="fa-thin fa-arrow-right"></i></span></a>
