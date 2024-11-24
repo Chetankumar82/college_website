@@ -204,11 +204,7 @@ const Header = () => {
             <ul className="mainmenu metismenu" id="mobile-menu-active">
 
                 <li className="has-droupdown">
-                    <Link to="#" className="main">Homepages</Link>
-                    <ul className="submenu mm-collapse">
-                        <li><Link className="mobile-menu-link" to="index.html">Home Style One</Link></li>
-                        <li><Link className="mobile-menu-link" to="index-two.html">Home Style Two</Link></li>
-                    </ul>
+                    <Link to="/" className="main">Home</Link>
                 </li>
                 <li className="has-droupdown">
                     <Link to="#" className="main">Events</Link>

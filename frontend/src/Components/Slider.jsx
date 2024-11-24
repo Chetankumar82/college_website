@@ -102,8 +102,8 @@ const Slider = () => {
                                                 <span>Est - 2008</span>
                                             </div>
                                             <h1 className="rts-slider-title">
-                                                CIT Providing<span> excellent </span>
-                                                 learning environment
+                                                Welcome to<span> excellence </span>
+                                                 Engineering environment
                                             </h1>
                                             <p className="rts-slider-desc w-560">
                                             A globally recognized institute of excellence in the field of education.

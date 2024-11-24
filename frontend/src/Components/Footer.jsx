@@ -97,6 +97,37 @@ const Footer = () => {
         </div>
     </div>
 </div>
+<div class="sticky-bar">
+         <ul>
+
+            <li class="call" data-tooltip="Call Now">
+               <Link target="_blank" to="tel:9829804013" class="ppwnd">
+               <img src="assets/images/social-icons/telephone.png" alt="" />
+               
+               </Link>
+            </li>
+           
+            <li class="d-one" data-tooltip="Chat With Us">
+               <Link target="_blank" to="https://web.whatsapp.com/send?phone=9829804013&amp;text=I'm%20interested%20to%20know%20about%20admission%20process." class="si-whatsapp">
+               <img src="assets/images/social-icons/social.png" alt="" />
+               
+               </Link>
+            </li>
+            
+            <li class="d-one" data-tooltip="Download Brochure">
+               <Link target="_blank" href="assets/pdf/SMPGC_Prospectus_compressed_1.pdf" class="si-whatsapp">
+               <img src="assets/images/social-icons/brochure.png" alt="" />
+               
+               </Link>
+            </li>
+            <li class="call" data-tooltip="Dawnloads">
+               <Link target="_blank" to="/dawnloads" class="ppwnd">
+               <img src="assets/images/social-icons/download.png" alt="" />
+               
+               </Link>
+            </li>
+         </ul>
+      </div>
 
 <div className="progress-wrap">
     <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
@@ -109,6 +140,7 @@ const Footer = () => {
 
 <div id="anywhere-home" className="">
 </div>
+
 </>
   )
 }

@@ -8,7 +8,7 @@ const AboutUs = () => {
             <div className="row justify-content-md-center">
                 <div className="col-lg-5 col-xl-5 col-md-10">
                     <div className="rts-about-image">
-                        <img src="assets/images/about/about-01.jpg" alt=""/>
+                        <img src="assets/images/about/about-01.Avif" alt=""/>
                     </div>
                 </div>
                 <div className="col-lg-7 col-xl-7 col-md-10">
