@@ -26,16 +26,16 @@ const Home = () => {
 
         
 
-        <Footer/>
-       
+            <Footer />
+
 
       
         
 
-  
-        
-    </>
-  )
+
+
+        </>
+    )
 }
 
 export default Home;
