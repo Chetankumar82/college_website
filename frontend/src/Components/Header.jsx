@@ -50,11 +50,11 @@ const Header = () => {
                                             <li className="sub-dropdown">
                                                 <Link to="javascript:void(0);">Introduction</Link>
                                                 <ul className="submenu third-lvl base">
-                                                    <li><Link className="mobile-menu-link" to="/">The Institute Infrastructure</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="/infrastructure">The Institute Infrastructure</Link></li>
                                                     <li><Link className="mobile-menu-link" to="faculty-details.html">Affiliations and Accreditations</Link></li>
                                                 </ul>
                                             </li>
-                                            <li><Link to="/contact">Hostel & Mess</Link></li>
+                                            <li><Link to="/hostel">Hostel & Mess</Link></li>
                                            
                                             
                                         </ul>

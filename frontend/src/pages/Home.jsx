@@ -6,6 +6,9 @@ import AboutUs from '../Components/AboutUs';
 import Capmustour from '../Components/Capmustour';
 import Whychoose from '../Components/Whychoose';
 import Cources from '../Components/Cources';
+import Recruiters from '../Components/Recruiters';
+import Testimonial from '../Components/Testimonial';
+import Campuslife from '../Components/Campuslife';
 
 const Home = () => {
   return (
@@ -16,6 +19,9 @@ const Home = () => {
         <AboutUs />
         <Cources />
         <Whychoose />
+        <Testimonial />
+        <Campuslife />
+        <Recruiters />
         
         
 
