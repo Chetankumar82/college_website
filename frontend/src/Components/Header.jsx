@@ -48,10 +48,11 @@ const Header = () => {
                                         <ul className="submenu">
                                             
                                             <li className="sub-dropdown">
-                                                <Link to="javascript:void(0);">Introduction</Link>
+                                                <Link to="">Introduction</Link>
                                                 <ul className="submenu third-lvl base">
                                                     <li><Link className="mobile-menu-link" to="/infrastructure">The Institute Infrastructure</Link></li>
-                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Affiliations and Accreditations</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="/affliationsandccreditations">Affiliations and Accreditations</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="/chairman">Chairman’s Message</Link></li>
                                                 </ul>
                                             </li>
                                             <li><Link to="/hostel">Hostel & Mess</Link></li>
@@ -66,31 +67,31 @@ const Header = () => {
                                         <li className="sub-dropdown">
                                                 <Link to="javascript:void(0);">Academic Profile</Link>
                                                 <ul className="submenu third-lvl base">
-                                                    <li><Link className="mobile-menu-link" to="faculty.html">Principle Profile</Link></li>
-                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Faculty Profile</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="/principle">Principle Profile</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="/faculty">Faculty Profile</Link></li>
                                                 </ul>
                                         </li>
                                         <li className="sub-dropdown">
                                                 <Link to="javascript:void(0);">Departments</Link>
                                                 <ul className="submenu third-lvl base">
-                                                    <li><Link className="mobile-menu-link" to="faculty.html">Computer Science</Link></li>
-                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Electrical</Link></li>
-                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Mechanical</Link></li>
-                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Civil</Link></li>
-                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Electronices & Communication</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="/cse">Computer Science</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="/electrical">Electrical</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="/mechanical">Mechanical</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="/civil">Civil</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="/comm">Electronices & Communication</Link></li>
                                                 </ul>
                                         </li>
                                         <li className="sub-dropdown">
                                                 <Link to="javascript:void(0);">Self Learning Programs</Link>
                                                 <ul className="submenu third-lvl base">
-                                                    <li><Link className="mobile-menu-link" to="faculty.html">NPTEL</Link></li>
-                                                    <li><Link className="mobile-menu-link" to="faculty-details.html">Swayam</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="https://nptel.ac.in/">NPTEL</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="https://swayam.gov.in/">Swayam</Link></li>
                                                 </ul>
                                         </li>
                                         <li className="sub-dropdown">
                                                 <Link to="javascript:void(0);">Research</Link>
                                                 <ul className="submenu third-lvl base">
-                                                    <li><Link className="mobile-menu-link" to="faculty.html">R&D Lab</Link></li>
+                                                    <li><Link className="mobile-menu-link" to="/research">R&D Lab</Link></li>
                                                     <li><Link className="mobile-menu-link" to="faculty-details.html">Workshops & Seminar</Link></li>
                                                     
                                                 </ul>
@@ -130,7 +131,7 @@ const Header = () => {
                                         </ul>
                                     </li>
                                     <li><Link className="nav-link" to="">Placement</Link></li>
-                                    <li><Link className="nav-link" to="contact.html">Contact Us</Link></li>
+                                    <li><Link className="nav-link" to="/contact">Contact Us</Link></li>
                                 </ul>
                             </nav>
                         </div>

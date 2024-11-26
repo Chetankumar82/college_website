@@ -18217,6 +18217,8 @@ nav ul li a {
 }
 
 .faculty-member__image {
+  margin-left: 89px;
+    width: 228px;
   margin-bottom: 30px;
 }
 .faculty-member__image img {
@@ -19896,11 +19898,11 @@ nav ul li a {
 }
 .admission-content-top .application-deadline__content table tbody tr:first-child td {
   font-weight: 600;
-  color: var(--rt-secondary);
+  color: gray;
   vertical-align: middle;
 }
 .admission-content-top .application-deadline__content table tbody tr td {
-  padding: 15px 20px;
+  padding: 30px 20px;
   color: var(--rt-body);
   vertical-align: middle;
 }
@@ -23946,17 +23948,4 @@ marquee {
 }
 .alumani {
    background-color: #F5F5FF;
-}
-.rts-section-title:after {
-  content: "";
-  position: absolute;
-  border: 0;
-  width: 100px;
-  height: 4px;
-  z-index: 9;
-  left: 0;
-  right: 0;
-  margin: 60px auto;
-
-  background: #0c8b51;
 }

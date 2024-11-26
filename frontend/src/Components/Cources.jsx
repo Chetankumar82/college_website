@@ -3,7 +3,7 @@ import React from 'react'
 const Cources = () => {
   return (
     <div class="rts-academic-area rts-section-padding">
-        <div class="px-5">
+        <div class="container">
             <div class="row">
                 <div class="rts-section text-center ">
                     <h3 class="rts-section-title">Course Offered For Your Bright Future</h3>

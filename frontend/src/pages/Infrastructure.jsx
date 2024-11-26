@@ -43,7 +43,7 @@ const Infrastructure = () => {
                                 </div>
                                 <div className="single-timeline-item">
                                     <h5 className="timeline-title">Lecture Theaters</h5>
-                                    <p> SMPGC has well furnished, spacious, air-cooled lecture theatres having adequate sitting 
+                                    <p> CIT has well furnished, spacious, air-cooled lecture theatres having adequate sitting 
                                     capacity and equipped with all the latest teaching aids like OHPs and LCDs. Such 
                                     modern teaching aids make sure that the students & the faculties have the very best 
                                     means at their disposal. This breaks from the traditional textbook teaching and ensures 
