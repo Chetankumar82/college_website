@@ -23949,3 +23949,13 @@ marquee {
 .alumani {
    background-color: #F5F5FF;
 }
+.program-description-area .workshop-para{
+  margin-top: 0px;
+}
+.header-one .main-nav-one.active {
+  display: block; /* Ensure visibility for mobile menu */
+}
+
+.menu-bar {
+  cursor: pointer;
+}
