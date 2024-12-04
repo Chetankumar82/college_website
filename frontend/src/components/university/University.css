@@ -1,0 +1,60 @@
+.uni-slide div img{
+    width: 35%;
+    height: 20%;
+    position: relative;
+    left: 32%;
+}
+.uni-slide div{
+    
+    text-align: center;
+    
+    width: 100%;
+  
+}
+.uni-slide div h3{
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #005ca1;
+    font-weight: 800;
+}
+.uni-slide div p{
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.uni-slide{
+    
+    text-align: center;
+}
+.course-table h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-size: 1.5rem;
+}
+.course-table table{
+    margin: 0 auto;
+    border: 1px solid;
+    
+}
+.course-table table thead th{
+    padding: 10px 15px;
+    
+}
+.course-table table tr td{
+    
+    padding: 5px 15px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+ .course-table table thead tr:nth-child(1){
+    background-color: #203154;
+}
+.course-table table tr:nth-child(odd){
+    background-color: lightgray;
+}
+.courses-container{
+    margin-top: 0px;
+    padding: 0 30px;
+}

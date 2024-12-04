@@ -616,6 +616,7 @@ p {
 }
 
 .section-title h6 {
+  margin-top: 10px;
   line-height: 1;
   font-size: 18px;
   font-weight: 600;
@@ -1701,7 +1702,7 @@ p {
 @media (max-width: 1600px) {
   .header-main .main-menu ul li {
     -webkit-margin-end: 30px;
-            margin-inline-end: 30px;
+            margin-inline-end: 15px;
   }
 }
 
@@ -1988,7 +1989,7 @@ p {
     max-width: 340px;
   }
   .header-1 .header-left .logo img{
-    width: 250px;
+    width: 280px;
   }
 }
 
@@ -3145,7 +3146,7 @@ p {
 }
 
 .breadcrumb-wrapper .page-heading {
-  padding: 120px 0 100px;
+  padding: 70px 0 70px;
   text-align: center;
 }
 
@@ -3233,9 +3234,10 @@ p {
 }
 
 .breadcrumb-wrapper .page-heading .breadcrumb-image {
-  margin-top: 100px;
+  margin-top: 70px;
   position: relative;
   z-index: 1;
+  height: 420px;
 }
 
 .breadcrumb-wrapper .page-heading .breadcrumb-image img {
@@ -16376,8 +16378,9 @@ p {
 
 .footer-bottom.style-2 {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 30px 0;
+  padding: 10px 0;
 }
+
 
 .footer-bottom.style-2 p {
   text-align: center;
@@ -16736,6 +16739,7 @@ p {
 }
 
 .footer-section {
+  margin-top: 30px;
   position: relative;
 }
 
@@ -16946,7 +16950,7 @@ p {
 }
 
 .common-table .cart-item-thumb {
-  width: 86px;
+  width: 300px;
 }
 
 @media (max-width: 1399px) {
@@ -18045,3 +18049,14 @@ p {
 .footer-icon a{
   margin-left: 0px!important;
 }
+.section-margin{
+  margin-top: 255px;
+}
+.details-image{
+  padding: 40px;
+}
+table thead tr:nth-child(1){
+  background-color: #203154;
+}
+table thead tr:nth-child(1) th{
+  color: #fff;

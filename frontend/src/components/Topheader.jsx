@@ -7,7 +7,7 @@ const Topheader = () => {
   return (
     <>
     <div className='header-fixed'>
-    
+    <div className='container'>
     <div className='topheader'>
         <div className='left-side-header'>
             <ul>
@@ -27,7 +27,7 @@ const Topheader = () => {
         </div>
         </div>
 </div>
-
+</div>
     
     </>
   )

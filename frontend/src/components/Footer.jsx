@@ -46,7 +46,7 @@ const Footer = () => {
                                 </div>
                                 <ul class="list-area">
                                     <li><a href="courses.html">The Institute Infrastructure</a></li>
-                                    <li><a href="courses.html">Affliations and Accreditations</a></li>
+                                    <li><a href="/affiliation">Affliations and Accreditations</a></li>
                                     <li><a href="courses.html">Chairman's Message</a></li>
                                 </ul>
                             </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import Marque from './Marque'
 import Topheader from './Topheader'
 import { IoIosHome } from "react-icons/io";
-import { TbGridDots } from "react-icons/tb";
+
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
     <>
     <Topheader />
     <header id="header-sticky" className="header-1">
-            <div className="container-fluid">
+            <div className="container">
                 <div className="mega-menu-wrapper">
                     <div className="header-main">
                         <div className="header-left">
@@ -19,32 +19,7 @@ const Header = () => {
                                     <img src="assets/img/logo/logo-cit.png" alt="logo-img"/>
                                 </a>
                             </div>
-                            <div className="category-oneadjust">
-                               <div className="dot">
-                               <TbGridDots />
-                               </div>
-                                <select name="cate" className="category">
-                                   
-                                    <option value="1">
-                                        Our Departments
-                                    </option>
-                                    <option value="1">
-                                       Computer Sci. & Eng.
-                                    </option>
-                                    <option value="1">
-                                        Mechanical Engineering
-                                    </option>
-                                    <option value="1">
-                                        Electrical Engineering
-                                    </option>
-                                    <option value="1">
-                                        Elect. & Comm. Engineering
-                                    </option>
-                                    <option value="1">
-                                        Civil Engineering
-                                    </option>
-                                </select>
-                            </div>
+                            
                         </div>
                         <div className="header-right d-flex justify-content-end align-items-center">
                             <div className="mean__menu-wrapper">
@@ -59,7 +34,7 @@ const Header = () => {
                                             </li>
                                            
                                             <li className="has-dropdown menu-thumb">
-                                                <a href="index.html">
+                                                <a href="/">
                                                     <span className="head-icon"></span>
                                                     About Us
                                                     <i className="fas fa-chevron-down"></i>
@@ -75,13 +50,13 @@ const Header = () => {
                                                                     
                                                                     <div className="homemenu-content">
                                                                         <h4 className="homemenu-title">
-                                                                           <a href="index.html">
+                                                                           <a href="/about">
                                                                            <p>The Institute Infrastructure</p>
                                                                            </a>
-                                                                           <a href="index.html">
+                                                                           <a href="/affiliation">
                                                                            <p>Affliations and Accreditations</p>   
                                                                            </a>
-                                                                           <a href="index.html">
+                                                                           <a href="/chairman">
                                                                            <p>Chairman's Message</p>   
                                                                            </a>
                                                                         </h4>
@@ -257,7 +232,7 @@ const Header = () => {
                                                         </a>
                                                         <ul className="submenu">
                                                             <li><a href="news.html">The Institute Infrastructure</a></li>
-                                                            <li><a href="news-details.html">Affliations and Accreditations</a></li>
+                                                            <li><a href="/affiliation">Affliations and Accreditations</a></li>
                                                         </ul>
                                                     </li>
                                                     <li className="has-dropdown">
@@ -367,7 +342,7 @@ const Header = () => {
                                             <li>
                                                 <a href="contact.html">
                                                     <span className="head-icon"></span>
-                                                    Contact
+                                                    Contact Us
                                                 </a>
                                             </li>
                                         </ul>
@@ -410,7 +385,7 @@ const Header = () => {
                                 </button>
                             </div>
                         </div>
-                        <h3 class="offcanvas-title"></h3>
+                        
                         <p>Welcome to, Exellence in <br/> Engineering Education </p>
                         <div class="social-icon d-flex align-items-center">
                         <Link to='#'><img src='Images/facebook.png' alt='facebook' /></Link>

@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Sliders from '../components/mainSlider/Sliders'
+import University from '../components/university/University'
 
 const Home = () => {
   return (
     <>
-    <Header />
-    <Footer />
+    <Sliders />
+    <University />
     </>
   )
 }
