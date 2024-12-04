@@ -55,6 +55,8 @@
     background-color: lightgray;
 }
 .courses-container{
-    margin-top: 0px;
-    padding: 0 30px;
+    margin: 80px auto;
+    padding: 60px 0px;
+    background-color: var(--bg);
+    margin-bottom: 0px;
 }

@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Chaiman from "./Pages/Chaiman";
 import Affiliation from "./Pages/Affiliation";
 import BackToTop from "./components/BackToTop";
+import Chatbox from "./components/Chatbox/Chatbox";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
     </Routes>
     <Footer />
     <BackToTop />
+    <Chatbox />
     </>
   )
 }

@@ -7157,12 +7157,12 @@ p {
 }
 
 .about-wrapper-5 .about-content p {
-  font-size: 19px;
+  font-size: 16px;
   color: var(--header);
 }
 
 .about-wrapper-5 .about-content .counter-box-items {
-  margin-top: 50px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7173,6 +7173,7 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 
 @media (max-width: 1199px) {
   .about-wrapper-5 .about-content .counter-box-items {
@@ -7194,8 +7195,13 @@ p {
 }
 
 .about-wrapper-5 .about-content .counter-box-items .counter-content {
-  border-right: 1px solid var(--border);
-  padding-right: 90px;
+  text-decoration: none;
+    padding: 11px 32px;
+    color: white;
+    background-color: var(--theme-blue);
+}
+.about-wrapper-5 .about-content .counter-box-items .counter-content i {
+  margin-left: 5px;
 }
 
 @media (max-width: 1399px) {

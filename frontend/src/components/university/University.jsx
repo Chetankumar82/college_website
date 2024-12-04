@@ -41,6 +41,7 @@ const University = () => {
   return (
     <>
     <div className='courses-container'>
+      <div className="container">
       <div className="row">
         <div className="col-lg-4">
         <div className="container">
@@ -79,7 +80,8 @@ const University = () => {
             </div>
             </div>
         </div>
-        <div className="col-lg-8">
+        <div className="col-lg-1"></div>
+        <div className="col-lg-7">
     <div className="container">
       <Slider {...settings} className='uni-slide'>
         <div>
@@ -105,6 +107,7 @@ const University = () => {
         
         
       </Slider>
+    </div>
     </div>
     </div>
     </div>

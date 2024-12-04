@@ -1,14 +1,14 @@
 .slider{
-    height: 100vh;
+    
     width: 100%;
-    object-fit: contain;
+    
 }
 .slider div img{
     width: 100%;
 }
 .slider-text{
     position: relative;
-    bottom: 130px;
+    bottom: 150px;
     left: 200px;
     color: white;
     font-family: cursive;
