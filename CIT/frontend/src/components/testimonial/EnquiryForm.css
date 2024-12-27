@@ -1,0 +1,138 @@
+.enquiry-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 0 50px auto;
+  padding: 30px;
+  background: #f7f9fc;
+  border: 1px solid rgb(235, 238, 245);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.enquiry-form-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.e-header-section {
+  text-align: center;
+}
+
+.e-header {
+  font-size: 2.5rem;
+ 
+  margin-bottom: 10px;
+}
+
+.form-area {
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.in input,
+.in select,
+.in textarea {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.in input:focus,
+.in select:focus,
+.in textarea:focus {
+  border-color: rgb(3, 31, 66);
+  box-shadow: 0 0 5px rgba(22, 9, 62, 0.2);
+}
+
+.in textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.s-btn {
+  background: #16093e;
+  color: whitesmoke;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.s-btn:hover {
+  background: #2a0f6a;
+  transform: translateY(-3px);
+}
+
+.s-btn:active {
+  transform: translateY(0);
+}
+
+.e-h-en {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .enquiry-form {
+    padding: 20px;
+  }
+
+  .e-header {
+    font-size: 1.8rem;
+  }
+
+  form {
+    gap: 10px;
+  }
+
+  .in input,
+  .in select,
+  .in textarea {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+
+  .s-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .enquiry-form {
+    padding: 15px;
+  }
+
+  .e-header {
+    font-size: 1.6rem;
+  }
+
+  form {
+    gap: 8px;
+  }
+
+  .in input,
+  .in select,
+  .in textarea {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .s-btn {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+}

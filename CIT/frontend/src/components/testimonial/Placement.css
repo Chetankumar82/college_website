@@ -1,0 +1,77 @@
+.blue-bg{
+    background-color: rgb(0, 92, 161);
+
+}
+.cta-newsletter-wrapper {
+    padding: 80px 0;
+  }
+  
+ 
+  
+  .placement {
+    text-align: center;
+  }
+  
+  
+  .placement-slogan {
+    
+    margin: 0px 120px;
+    margin-top: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  #c-slider {
+    margin: 0px auto;
+  }
+  .slider-company-card {
+    
+
+    display: inline-block;
+    
+    margin-left: 35px;
+    overflow-wrap: break-word;
+  }
+  
+  .slider-card-image-company {
+    height: 50px;
+    width: 80%;
+  
+    /* margin: 0px 100px ; */
+    margin-top: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    
+    .placement-slogan {
+      margin: 0px 31px!important;
+      margin-top: 10px!important;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .main-company-slider {
+    width: 90%;
+    height: 289px;
+    position: relative;
+    display: flex
+;
+    align-items: center;
+    margin: 32px auto;
+}
+#c-slider {
+  display: flex
+;
+  flex-wrap: wrap;
+}
+.slider-card-image-company {
+  height: 50px;
+  width: 100px;
+  /* margin: 0px 100px; */
+  margin-top: 10px;
+}
+.slider-company-card {
+  display: inline-block;
+  margin-left: 44px;
+  overflow-wrap: break-word;
+}
+.cta-newsletter-wrapper{
+  padding: 40px 0;
+}
+  }

@@ -1,0 +1,52 @@
+.section-padding {
+    padding: 100px 0;
+}
+.news-area .main-sidebar {
+    margin-left: 20px;
+}
+.news-area .main-sidebar .single-sidebar-widget {
+    border: 2px solid #a7bcff3b;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+.news-area .main-sidebar .single-sidebar-widget .wid-title {
+    margin-bottom: 25px;
+    padding-left: 45px;
+    position: relative;
+}
+.popular-posts .single-post-item, .popular_posts .single-post-item {
+    overflow: hidden;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.popular-posts .single-post-item .thumb, .popular_posts .single-post-item .thumb {
+    height: 95px;
+    width: 95px;
+    background-color: #f2f2f2;
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.popular-posts .single-post-item .post-content, .popular_posts .single-post-item .post-content {
+    overflow: hidden;
+}
+.popular-posts .single-post-item .post-content h5, .popular_posts .single-post-item .post-content h5 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+.popular-posts .single-post-item .post-content .post-date, .popular_posts .single-post-item .post-content .post-date {
+    margin-top: 10px;
+    color: theme-blue;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.popular-posts .single-post-item .post-content .post-date i, .popular_posts .single-post-item .post-content .post-date i {
+    margin-right: 7px;
+}

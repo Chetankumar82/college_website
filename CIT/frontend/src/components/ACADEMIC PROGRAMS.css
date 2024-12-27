@@ -1,0 +1,53 @@
+.cta-newsletter-section {
+ 
+  margin: 60px 0px 0px;
+}
+.cta-newsletter-wrapper {
+  padding: 80px 0;
+ 
+}
+.cta-newsletter-wrapper .list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.cta-newsletter-wrapper .list-items li {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.cta-newsletter-wrapper .list-items li i {
+  margin-right: 5px;
+}
+.blue-bg {
+  background-color: #005ca1;
+}
+@media  screen and (max-width: 768px){
+  .acadamic{
+      
+      font-size: 1.8rem!important;
+  }
+  .cta-newsletter-wrapper {
+    padding: 60px 0!important;
+}
+.para{
+  font-size: 14px!important;
+}
+.cta-newsletter-wrapper .list-items {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 10px;
+  margin-top: 30px;
+  flex-direction: column;
+}
+}

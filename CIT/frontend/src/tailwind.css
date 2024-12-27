@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* global.css */
+
+/* Hide scrollbar for Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+  /* Hide scrollbar for Firefox */
+  * {
+    scrollbar-width: none;
+  }
+  
+  /* Ensure scrollable elements still have overflow */
+  .scroll-container {
+    overflow-y: auto;
+  }
+  

@@ -1,0 +1,72 @@
+.Outerbox {
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 4%;
+  
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  
+  
+  font-size: 22px;
+}
+.menu > li {
+  text-align: center;
+  background-color: yellow;
+  padding: 10px 50px;
+}
+.menu > li:hover {
+  cursor: pointer;
+  color: darkblue;
+}
+
+.container {
+  display: grid;
+  cursor: pointer;
+  max-width: 1000px;
+  min-width: auto;
+  grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+  height: 20rem;
+  overflow-y: scroll;
+  height: 600px;
+  cursor: grab;
+}
+
+.container img {
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    text-align: left;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    
+    
+    font-size: 12px;
+  }
+  .menu > li {
+    text-align: center;
+    background-color: yellow;
+    padding: 5px 10px;
+  }
+  .Outerbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 4%;
+    
+  }
+}

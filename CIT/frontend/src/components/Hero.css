@@ -1,0 +1,14 @@
+@media screen and (max-width: 767px){
+    .main-slider1{
+        margin-top: 152px;
+        overflow-x: hidden;
+    }
+    .slider-img{
+        width: 13%!important;
+        top: 90px!important;
+    }
+    .slider-overlay .over-text{
+        font-size: 14px!important;
+    }
+
+}

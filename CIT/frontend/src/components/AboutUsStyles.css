@@ -1,0 +1,13 @@
+p{
+    color: black;
+}
+@media  screen and (max-width: 768px){
+    .about-head{
+        margin-top: 50px!important;
+        margin-bottom: -30px!important;
+        font-size: 1.8rem;
+    }
+    .section-title .about-para{
+        font-size: 14px!important;
+    }
+}

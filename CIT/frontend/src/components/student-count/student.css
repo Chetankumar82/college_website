@@ -1,0 +1,12 @@
+.blue-bg{
+    background-color: #005ca1;
+}
+.cta-newsletter-wrapper {
+    padding: 80px 0;
+}
+@media screen and (max-width:768px) {
+    .cta-newsletter-wrapper{
+        padding: 60px 0!important;
+    }
+    
+}

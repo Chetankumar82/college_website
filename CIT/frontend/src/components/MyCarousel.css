@@ -1,0 +1,12 @@
+.carosule{
+    font-size: 3rem!important;
+    margin-bottom: 15px!important;
+}
+@media screen and (max-width:768){
+    .cta-newsletter-wrapper{
+        padding: 40px 0;
+    }
+    .carosule{
+        font-size: 1.8rem!important;
+    }
+}

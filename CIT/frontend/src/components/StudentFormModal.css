@@ -1,0 +1,89 @@
+/* src/ModalForm.css */
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 600px;
+    border-radius: 10px;
+    color: black;
+  }
+  
+  .closeBtn {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeBtn:hover,
+  .closeBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  button {
+    display: block;
+    margin-top: 20px;
+  }
+  
+ .form-grp{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+ }
+  
+
+  
+   
+ .form-grp input {
+    width:70%; /* Adjust width of input fields */
+    padding: 8px;
+    border: 1px solid #351e1e;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .form-grp label{
+    width: 150px;
+  }
+
+  .input-field[type="file"] {
+    padding: 5px;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  input{
+    border: 2px solid black;
+  }

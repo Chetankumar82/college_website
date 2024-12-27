@@ -1,0 +1,122 @@
+/* FixFooter.css */
+
+.fix-footer-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    z-index: 1000;
+    
+  }
+  /* Tooltip container */
+a[data-toggle="tooltip"] {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* Tooltip text */
+  a[data-toggle="tooltip"]::after {
+    content: attr(title);
+    position: absolute;
+    background-color: #222;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    top: -250%; /* Position below the element */
+    left: -90%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  /* Show tooltip on hover */
+  a[data-toggle="tooltip"]:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .fix-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+    
+    margin: 0 auto;
+  }
+  
+  .left-section {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .right-section ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .right-section ul li {
+    display: inline-block;
+    background-color: #eded06;
+    padding: 10px 13px 0px 13px;
+    border-radius: 50%;
+    
+  }
+  
+  .right-section ul li a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: rgb(32, 49, 84);
+    margin-bottom: 6px;
+  }
+  
+  .right-section ul li a:hover {
+    color: #1e90ff;
+  }
+  @media screen and (max-width: 768px) {
+   .left-section a img{
+      width: 120px!important;
+      height: 50px!important;
+   }
+   .right-section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+.fix-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 0 auto;
+}
+.fix-footer-section {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+  z-index: 1000;
+  
+}
+   }
+  
+  

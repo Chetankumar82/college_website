@@ -1,0 +1,13 @@
+@media screen and (max-width: 1024px) {
+  .social-icon {
+    display: none;
+  }
+  .contact {
+    
+    font-size: 11px;
+    padding-top: 8px;
+  }
+  .call{
+    display: none;
+  }
+}

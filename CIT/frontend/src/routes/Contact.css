@@ -1,0 +1,161 @@
+
+.contact-page {
+    padding: 80px 50px;
+    background: linear-gradient(120deg, #f0f4f8, #e6edf3);
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+  
+  .contact-info-1 {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .contact-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .contact-info-1 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    
+  }
+  
+  .contact-info-1 a,p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border: 2px solid #c4bebe;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .contact-info-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .contact-info-icon {
+    border: 5px dotted;
+    font-size: 1.8rem;
+    color: #1a3b6b;
+    background-color: #eded06;
+    padding: 13px 20px;
+    border-radius: 50%;
+}
+  
+  .contact-info-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    color: #1a3b6b;
+    font-weight: 600;
+  }
+  
+  .contact-info-content p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  iframe {
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  iframe:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-page .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .col-lg-6,
+  .col-md-12,
+  .col-sm-12 {
+    flex: 1 1 45%;
+  }
+  
+  .col-lg-12 {
+    flex: 1 1 100%;
+  }
+  
+  .contact-page h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-page {
+      padding: 30px 15px;
+    }
+  
+    .contact-info-1 h1 {
+      font-size: 2rem;
+    }
+  
+    .contact-info-1 p {
+      font-size: 0.9rem;
+    }
+  
+    .contact-info-content h3 {
+      font-size: 1.2rem;
+    }
+  
+    .contact-info-content p {
+      font-size: 0.9rem;
+    }
+  
+    iframe {
+      height: 300px;
+    }
+  
+    .col-lg-6,
+    .col-md-12,
+    .col-sm-12 {
+      flex: 1 1 100%;
+    }
+    .cta-newsletter-section{
+        padding: 80px 0px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-info h1 {
+      font-size: 1.8rem;
+    }
+  
+    .contact-info p {
+      font-size: 0.85rem;
+    }
+  
+    .contact-info-content h3 {
+      font-size: 1rem;
+    }
+  
+    .contact-info-content p {
+      font-size: 0.8rem;
+    }
+  
+    iframe {
+      height: 250px;
+    }
+  }
+  
