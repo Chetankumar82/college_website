@@ -1,10 +1,13 @@
+const dotenv = require('dotenv');
+dotenv.config();
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const config = require('./config');
+const connectDB = require('./connectDB');
 const fs = require("fs");
 const XLSX = require("xlsx");
+
 
 const app = express();
 
@@ -12,11 +15,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-// Connect to MongoDB
-mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
-.then(() => {
-    console.log('MongoDB connected');
-  }).catch(err => console.log(err));
 
 // Routes
 app.use('/api/auth', require('./routes/auth'));
@@ -69,7 +67,10 @@ app.post("/submit-enquiry", (req, res) => {
 
 
 
-const port = process.env.PORT || 5000;
-app.listen(port, () => console.log(`Server running on port ${port}`));
-
+const PORT = process.env.PORT || 5000;
+connectDB().then(()=>{
+  app.listen(PORT,()=>{
+      console.log("Server is running",PORT)
+  })
+})
 

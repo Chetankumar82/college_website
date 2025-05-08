@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import axios from 'axios';
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const EventSidebar = ({ Events, changeEventName }) => {
   const fileInputRef = useRef(null);
@@ -36,7 +37,7 @@ const EventSidebar = ({ Events, changeEventName }) => {
     formData.append('category', selectedCategory);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/event-images/upload', formData);
+      const response = await axios.post(`${BASE_URL}/api/event-images/upload`, formData);
 
       console.log(response.data);
       // Handle success, update UI, etc.

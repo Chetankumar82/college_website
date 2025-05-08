@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import NoticeUpload from '../components/NoticeUpload';
 import LabManualUpload from '../components/labManualUpload';
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const NoticeAndManual = ({ login }) => {
   const [notices, setNotices] = useState([]);
@@ -10,7 +11,7 @@ const NoticeAndManual = ({ login }) => {
 
   const handleDownloadNotice = async (noticeId) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/notices/notice/${noticeId}`, {
+      const response = await axios.get(`${BASE_URL}/api/notices/notice/${noticeId}`, {
         responseType: 'blob',
       });
       const url = window.URL.createObjectURL(new Blob([response.data]));
@@ -27,7 +28,7 @@ const NoticeAndManual = ({ login }) => {
 
   const handleDownloadLabManual = async (manualId) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/labManuals/labManual/${manualId}`, {
+      const response = await axios.get(`${BASE_URL}/api/labManuals/labManual/${manualId}`, {
         responseType: 'blob',
       });
       const url = window.URL.createObjectURL(new Blob([response.data]));
@@ -44,7 +45,7 @@ const NoticeAndManual = ({ login }) => {
 
   const handleDeleteNotice = async (noticeId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/notices/notice/${noticeId}`);
+      await axios.delete(`${BASE_URL}/api/notices/notice/${noticeId}`);
       setUploaded(!upload);
     } catch (error) {
       console.error('Error deleting notice:', error);
@@ -53,7 +54,7 @@ const NoticeAndManual = ({ login }) => {
 
   const handleDeleteLabManual = async (manualId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/labManuals/labManual/${manualId}`);
+      await axios.delete(`${BASE_URL}/api/labManuals/labManual/${manualId}`);
       setUploaded(!upload);
     } catch (error) {
       console.error('Error deleting lab manual:', error);
@@ -62,7 +63,7 @@ const NoticeAndManual = ({ login }) => {
 
   const fetchManuals = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/labManuals/labManual');
+      const response = await axios.get(`${BASE_URL}/api/labManuals/labManual`);
       setLabManuals(response.data.reverse());
     } catch (error) {
       console.error('Error fetching lab manuals:', error);
@@ -71,7 +72,7 @@ const NoticeAndManual = ({ login }) => {
 
   const fetchNotices = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/notices/notice');
+      const response = await axios.get(`${BASE_URL}/api/notices/notice`);
       setNotices(response.data.reverse());
     } catch (error) {
       console.error('Error fetching notices:', error);

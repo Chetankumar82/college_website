@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import FacultyImg from '../assets/faculty/Dummy.jpeg'
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const FacultyCard = ({ faculty, onUpdate, onDelete }) => {
-  const [image, setImage] = useState(faculty.image ? `http://localhost:5000/${faculty.image}` : FacultyImg); // Update the image URL
+  const [image, setImage] = useState(faculty.image ? `${BASE_URL}/${faculty.image}` : FacultyImg); // Update the image URL
 
 
 
@@ -15,11 +16,11 @@ const FacultyCard = ({ faculty, onUpdate, onDelete }) => {
 
       try {
         const response = await axios.put(
-          `http://localhost:5000/api/faculties/${faculty._id}/image`,
+          `${BASE_URL}/api/faculties/${faculty._id}/image`,
           formData
         );
 
-        setImage(`http://localhost:5000/${response.data.imageUrl}`); // Update image state with new image URL
+        setImage(`${BASE_URL}/${response.data.imageUrl}`); // Update image state with new image URL
       } catch (error) {
         console.error('Error uploading image:', error);
         // Handle error as needed

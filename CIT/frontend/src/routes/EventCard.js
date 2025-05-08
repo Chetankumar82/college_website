@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const EventCard = ({ event}) => {
-  const [imageUrl, setImage] = useState(event.imageUrl ? `http://localhost:5000/${event.imageUrl}` : 'https://via.placeholder.com/150'); // Update the image URL
+  const [imageUrl, setImage] = useState(event.imageUrl ? `${BASE_URL}/${event.imageUrl}` : 'https://via.placeholder.com/150'); // Update the image URL
 
   const handleDelete = async (imageId) => {
     try {
         console.log(event)
-      await axios.delete(`http://localhost:5000/api/event-images/${imageId}`);
+      await axios.delete(`${BASE_URL}/api/event-images/${imageId}`);
       // Optionally, refetch event images or update the state to reflect the deletion
     } catch (error) {
       console.error('Error deleting event image:', error);

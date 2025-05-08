@@ -3,6 +3,7 @@ import axios from 'axios';
 import FacultyForm from './FacultyForm';
 import FacultyCard from './FacultyCard';
 import FacultyManagementSidebar from './FacultyManagementSidebar';
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const FacultyManagement = () => {
   const [facultyData, setFacultyData] = useState([]);
@@ -27,7 +28,7 @@ const FacultyManagement = () => {
 
   const fetchFacultyData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/faculties');
+      const response = await axios.get(`${BASE_URL}/api/faculties`);
       setFacultyData(response.data);
     } catch (error) {
       console.error('Error fetching faculty data:', error);
@@ -45,7 +46,7 @@ const FacultyManagement = () => {
 
   const handleDeleteFaculty = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/faculties/${id}`);
+      await axios.delete(`${BASE_URL}/api/faculties/${id}`);
       // Remove faculty from local state after successful deletion
       setFacultyData((prevData) => prevData.filter((item) => item._id !== id));
     } catch (error) {

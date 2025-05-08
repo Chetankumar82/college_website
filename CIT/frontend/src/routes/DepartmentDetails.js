@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import FacultyImg from '../assets/faculty/Dummy.jpeg'
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const DepartmentDetails = ({ name }) => {
   const [faculties, setFaculties] = useState([]);
@@ -22,7 +23,7 @@ const DepartmentDetails = ({ name }) => {
 
   const fetchFacultyData = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/faculties");
+      const response = await axios.get(`${BASE_URL}/api/faculties`);
 
       setFaculties(response.data.filter(faculty => faculty.department === mapDept[name]));
     } catch (error) {
@@ -31,7 +32,7 @@ const DepartmentDetails = ({ name }) => {
   };
   const fetchManuals = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/labManuals/labManual');
+      const response = await axios.get(`${BASE_URL}/api/labManuals/labManual`);
       setLabManuals(response.data.filter(manual => manual.branch === name).reverse());
     } catch (error) {
       console.error('Error fetching lab manuals:', error);
@@ -40,7 +41,7 @@ const DepartmentDetails = ({ name }) => {
 
   const handleDownloadLabManual = async (manualId) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/labManuals/labManual/${manualId}`, {
+      const response = await axios.get(`${BASE_URL}/api/labManuals/labManual/${manualId}`, {
         responseType: 'blob',
       });
       const url = window.URL.createObjectURL(new Blob([response.data]));
@@ -103,7 +104,7 @@ const DepartmentDetails = ({ name }) => {
               <div className="text-center">
                 <h2 className="text-xl font-bold">{faculty.name}</h2>
                 <img
-                  src={faculty.image !== '' ? `http://localhost:5000/${faculty.image}` : FacultyImg}
+                  src={faculty.image !== '' ? `${BASE_URL}/${faculty.image}` : FacultyImg}
                   alt={faculty.name}
                   className="w-32 h-32 object-cover mt-2 mb-2 mx-auto rounded-full"
                 />

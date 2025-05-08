@@ -3,6 +3,7 @@ import axios from 'axios';
 import NoticeUpload from '../components/NoticeUpload';
 import LabManualUpload from '../components/labManualUpload';
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const AdminPage = ({ login }) => {
   const [notices, setNotices] = useState([]);
@@ -12,7 +13,7 @@ const AdminPage = ({ login }) => {
 
   const handleDownloadNotice = async (noticeId) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/notices/notice/${noticeId}`, {
+      const response = await axios.get(`${BASE_URL}/api/notices/notice/${noticeId}`, {
         responseType: 'blob',
       });
       const url = window.URL.createObjectURL(new Blob([response.data]));
@@ -31,7 +32,7 @@ const AdminPage = ({ login }) => {
 
   const fetchNotices = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/notices/notice');
+      const response = await axios.get(`${BASE_URL}/api/notices/notice`);
       setNotices(response.data.reverse());
     } catch (error) {
       console.error('Error fetching notices:', error);

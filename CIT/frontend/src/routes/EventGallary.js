@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import EventCard from './EventCard';
 import EventSidebar from './EventSidebar';
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const EventGallary = () => {
   const [selectEvent, setSelectEvent] = useState('');
@@ -15,7 +16,7 @@ useEffect(() => {
 
   const fetchEventImages = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/event-images');
+      const response = await axios.get('${BASE_URL}/api/event-images');
       setEventImages(response.data);
     } catch (error) {
       console.error('Error fetching event images:', error);

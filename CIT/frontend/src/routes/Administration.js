@@ -1,4 +1,5 @@
 import axios from 'axios';
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 import { useState, useEffect } from 'react';
 const Administration = () => {
   const [facultyData, setFacultyData] = useState([]);
@@ -159,7 +160,7 @@ const Administration = () => {
   
   const fetchFacultyData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/faculties');
+      const response = await axios.get(`${BASE_URL}/api/faculties`);
       const allFacultyData = response.data;
   
       // Step 2: Filter the administration category

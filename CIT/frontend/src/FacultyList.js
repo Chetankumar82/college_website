@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import.meta.env.BASE_URL;
 
 const FacultyList = () => {
   const [faculties, setFaculties] = useState([]);
@@ -44,7 +45,7 @@ const FacultyList = () => {
               <td>
                 {faculty.image && (
                   <img
-                    src={`http://localhost:5000/${faculty.image}`}
+                    src={`${BASE_URL}/${faculty.image}`}
                     alt={faculty.name}
                     style={{ width: '100px', height: 'auto' }}
                   />

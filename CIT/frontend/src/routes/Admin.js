@@ -4,7 +4,7 @@ import axios from 'axios'; // Import Axios
 import { Link,Route,Routes } from 'react-router-dom';
 import AdminPage from './AdminPage';
 import './Admin.css';
-
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 const Admin = () => {
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
@@ -36,7 +36,7 @@ const Admin = () => {
       alert('Login Successful');
       try {
         // Make API call to backend for login using Axios
-        const response = await axios.post('http://localhost:5000/api/auth/login', { name, password });
+        const response = await axios.post(`${BASE_URL}/api/auth/login`, { name, password });
         console.log(response)
 
         if (response.status === 200) {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const FacultyForm = ({ faculty, departments, onClose, setCreate }) => {
   const [formData, setFormData] = useState({
@@ -26,10 +27,10 @@ const FacultyForm = ({ faculty, departments, onClose, setCreate }) => {
     try {
       if (faculty) {
         // If faculty exists, update existing faculty
-        await axios.put(`http://localhost:5000/api/faculties/${faculty._id}`, formData);
+        await axios.put(`${BASE_URL}/api/faculties/${faculty._id}`, formData);
       } else {
         // If no faculty (creating new), make a POST request
-        await axios.post('http://localhost:5000/api/faculties', formData);
+        await axios.post(`${BASE_URL}/api/faculties`, formData);
       }
       setCreate(true); // Trigger data fetch in parent component
       onClose(); // Close the modal
