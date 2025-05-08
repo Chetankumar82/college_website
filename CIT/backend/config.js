@@ -1,5 +1,5 @@
 // config.js
 module.exports = {
-    mongoURI: 'mongodb://localhost:27017/CIT_WEBSITE'
+    mongoURI: 'mongodb+srv://Chetan:chetan%408203@binkeyit.6edam.mongodb.net/CIT_WEBSITE?retryWrites=true&w=majority&appName=CIT_WEBSITE'
 };
   
